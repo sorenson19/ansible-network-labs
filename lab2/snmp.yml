@@ -17,6 +17,6 @@
           - show run | inc snmp
         register: snmp
         
-    -name: Output the SNMP config
+    - name: Output the SNMP config
       debug:
         msg: "{{ snmp }}
