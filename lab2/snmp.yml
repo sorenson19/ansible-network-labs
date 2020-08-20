@@ -15,7 +15,7 @@
       ios_command:
         commands:
           - show run | inc snmp
-        register: snmp
+      register: snmp
         
     - name: Output the SNMP config
       debug:
