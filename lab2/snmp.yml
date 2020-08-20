@@ -19,4 +19,4 @@
         
     - name: Output the SNMP config
       debug:
-        msg: "{{ snmp }}
+        msg: "{{ snmp }}"
