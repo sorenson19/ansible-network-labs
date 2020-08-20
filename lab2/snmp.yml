@@ -10,3 +10,8 @@
         commands:
           - snmp-server community ansible-public RO
           - snmp-server community ansible-private RW
+
+    - name: Validate the SNMP strings are present
+      ios_command:
+        commands:
+          - show run | inc snmp
